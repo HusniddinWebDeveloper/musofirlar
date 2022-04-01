@@ -1,0 +1,101 @@
+input,button,select,option {
+    padding: 10px 25px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: inset 0px 0px 3.50669px 0.584449px rgba(0, 0, 0, 0.25);
+    border-radius: 4.09114px;
+    outline: none;
+    
+}
+option {
+    color: #007FFF;
+    border: #cbdef1;
+}
+.Input {
+    flex: 2;
+    margin-right: 20px;
+}
+.Input,.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0px 0px 3.50669px 0.584449px rgba(0, 0, 0, 0.25);
+    border-radius: 4.09114px;  
+    padding:10px 20px;
+}
+.Input button {
+    background-color: #007FFF;
+    height: fit-content;
+    padding: 5px 25px;
+} 
+.button button {
+    border: 1.73938px solid #007FFF;
+    color: #007FFF;
+}
+.Input img {
+    height: 20px;
+}
+h3{
+    margin: 50px 0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.card {
+    position: relative;
+    border-radius: 17.404px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3.48079px rgba(0, 0, 0, 0.25);
+    border-radius: 17.404px 17.404px 13px 13px;
+    padding-bottom: 20px;
+}
+.card > img {
+    width: 100%;
+    border-radius: 17.404px 17.404px 0 0 ;
+
+}
+
+.list {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px; 
+}
+
+.card div  img {
+    width: 15px;
+}
+.card button {
+    margin-left: auto;
+    color: #007FFF;
+    font-weight: 500;
+    font-size: 14.9989px;
+    transition: .2s all;
+
+}
+button:hover{
+    background-color: #58a3ee;
+    color: #FFFFFF;
+    transition: .2s all;
+}
+.stack {
+    margin: 20px auto;
+    width: fit-content;
+}
+@media(max-width:1200px){
+    .cards {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:768px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:576px){
+    .cards{
+        grid-template-columns:auto;
+    }
+}

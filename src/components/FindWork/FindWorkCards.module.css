@@ -1,0 +1,126 @@
+input,button,select,option {
+    padding: 10px 25px;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: inset 0px 0px 3.50669px 0.584449px rgba(0, 0, 0, 0.25);
+    border-radius: 4.09114px;
+    outline: none;
+    
+}
+option {
+    color: #007FFF;
+    border-color: #cbdef1;
+}
+.Wrap {
+    display: grid;
+    grid-template-columns:auto 25%;
+    gap: 20px;
+}
+.Input {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+.Input,.button {
+    display: grid;
+    align-items: center;
+    padding:10px 20px;
+    width: 100%;
+    box-shadow: inset 0px 0px 3.50669px 0.584449px rgba(0, 0, 0, 0.25);
+    border-radius: 4.09114px;  
+}
+.Input button {
+    background-color: #007FFF;
+    height: fit-content;
+    padding: 5px 25px;
+} 
+.Input img {
+    height: 20px;
+}
+.button button {
+    border: 1.73938px solid #007FFF;
+    color: #007FFF;
+    width: 100%;
+}
+h3{
+    margin: 50px 0;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.card {
+    border-radius: 17.404px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3.48079px rgba(0, 0, 0, 0.25);
+    border-radius: 17.404px 17.404px 13px 13px;
+}
+.card > img {
+    width: 100%;
+    border-radius: 17.404px 17.404px 0 0 ;
+
+}
+.card button {
+    color: #007FFF;
+    font-weight: 500;
+    font-size: 14.9989px;
+    transition: .2s all;
+
+}
+.text {
+    padding: 20px;
+}
+.text p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.text b {
+    color: rgb(209, 209, 58);
+}
+button:hover{
+    background-color: #58a3ee;
+    color: #FFFFFF;
+    transition: .2s all;
+}
+.stack {
+    margin: 20px auto;
+    width: fit-content;
+}
+
+
+sub {
+    font-size: 12px;
+}
+@media(max-width:1300px){
+    .cards {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:1015px) {
+    .Input{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+@media (max-width:768px){
+    .Wrap {
+        grid-template-columns: auto;
+    }
+    .Input{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+@media (max-width:576px){
+    .cards{
+        grid-template-columns:auto;
+    }
+    .Input{
+        grid-template-columns: auto;
+    }
+}
