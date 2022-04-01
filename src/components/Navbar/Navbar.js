@@ -1,12 +1,16 @@
 import React from 'react';
 import classes from "./Navbar.module.css";
 import { NavLink, Link } from "react-router-dom";
+import {FaBars} from "react-icons/fa";
 
 const Navbar = () => {
     return (
 		<div className={classes.df}>
 			<div className={classes.logo}>
 				<h2><Link to="/">Musofirlar</Link></h2>
+			</div>
+			<div className={classes.iconBars}>
+				<FaBars />
 			</div>
 			<div className={classes.navbarConetn}>
 				<ul className={classes.Navbar}>
