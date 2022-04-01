@@ -44,6 +44,11 @@
 .Navbar > li {
 	margin-left: 14px;
 }
+@media (min-width: 1350px) {
+	.Navbar > li {
+		margin-left: 2rem;
+	}
+}
 
 .Navbar > li > a {
 	text-decoration: none;
@@ -87,4 +92,40 @@
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 23px;
+}
+
+.iconBars {
+	display: none;
+}
+
+
+@media (max-width: 48em) {
+	.iconBars {
+		display: block;
+	}
+	.navbarConetn {
+		position: fixed;
+		background-color: #fff;
+		top: 0;
+		right: 0%;
+		width: 60%;
+		height: 100vh;
+		z-index: 9;
+	}
+	.Navbar {
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 100%;
+		width: 100%;
+		flex-flow: column nowrap;
+	}
+
+	.Navbar li {
+		margin-top: 1rem;
+		width: 100%;
+	}
+
+	.languageSign {
+		margin: 0;
+	}
 }
