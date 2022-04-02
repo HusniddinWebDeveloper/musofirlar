@@ -9,6 +9,7 @@ import money from '../../assets/icons/money.png';
 import home from '../../assets/icons/homeIcon.png';
 import qavat from '../../assets/icons/qavat.png';
 import right from '../../assets/icons/right.png';
+
 const Data = [];
 for (let i = 0; i < 20; i++) {
     Data.push({
