@@ -1,0 +1,131 @@
+.df {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row nowrap;
+	height: 90px;
+	padding: 0 2rem;
+	background: linear-gradient(#fff,rgba(255,255,255,.01));
+}
+
+.logo {
+	flex-basis: 10%;
+}
+
+.logo a {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #000;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 37.6368px;
+	line-height: 46px;
+}
+
+.navbarConetn {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+}
+
+.Navbar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	flex-flow: row nowrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.Navbar > li {
+	margin-left: 14px;
+}
+@media (min-width: 1350px) {
+	.Navbar > li {
+		margin-left: 2rem;
+	}
+}
+
+.Navbar > li > a {
+	text-decoration: none;
+	color: #000;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.languageSign {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-flow: row nowrap;
+	margin-left: 1rem;
+}
+.Select {
+	margin-right: 1rem;
+}
+
+.Select > select {
+	border: 2px solid #696969;
+	padding: 8px 15px;
+	border-radius: 2rem;
+	background-color: transparent;
+	outline: none;	
+	cursor: pointer;
+}
+
+.signInBtn > button {
+	padding: 8px 20px;
+	background: #FFB800;
+	border-radius: 2rem;
+	border: 0px solid #FFB800;
+	color: #000;
+	cursor: pointer;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 23px;
+}
+
+.iconBars {
+	display: none;
+}
+
+
+@media (max-width: 48em) {
+	.iconBars {
+		display: block;
+	}
+	.navbarConetn {
+		position: fixed;
+		background-color: #fff;
+		top: 0;
+		right: 0%;
+		width: 60%;
+		height: 100vh;
+		z-index: 9;
+	}
+	.Navbar {
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: 100%;
+		width: 100%;
+		flex-flow: column nowrap;
+	}
+
+	.Navbar li {
+		margin-top: 1rem;
+		width: 100%;
+	}
+
+	.languageSign {
+		margin: 0;
+	}
+}
